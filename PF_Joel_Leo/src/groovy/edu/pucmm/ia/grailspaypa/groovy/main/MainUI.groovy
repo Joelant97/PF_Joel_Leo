@@ -14,8 +14,11 @@ import com.vaadin.ui.VerticalLayout
 import edu.pucmm.ia.grailspaypa.domains.Parametro
 import edu.pucmm.ia.grailspaypal.services.ReglasNegocioService
 import org.vaadin.risto.formsender.FormSender
+import org.vaadin.risto.formsender.widgetset.client.*
 import org.vaadin.risto.formsender.widgetset.client.shared.Method
 
+import java.awt.Label
+import java.lang.reflect.Method
 
 
 @Theme("valo")
