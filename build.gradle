@@ -83,6 +83,9 @@ dependencies {
     testCompile "org.grails:grails-test-mixins:3.3.0"
 
     compile "org.grails.plugins:spring-security-core:3.2.3"
+//    // https://mvnrepository.com/artifact/org.springframework.security/spring-security-core
+//    compile group: 'org.springframework.security', name: 'spring-security-core', version: '5.1.2.RELEASE'
+
 
 }
 
