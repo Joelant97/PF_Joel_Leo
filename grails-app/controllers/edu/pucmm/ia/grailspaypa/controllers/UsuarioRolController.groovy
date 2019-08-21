@@ -1,6 +1,5 @@
 package edu.pucmm.ia.grailspaypa.controllers
 
-
 import edu.pucmm.ia.grailspaypa.domains.auth.UsuarioRol
 import edu.pucmm.ia.grailspaypa.domains.auth.Usuario
 
