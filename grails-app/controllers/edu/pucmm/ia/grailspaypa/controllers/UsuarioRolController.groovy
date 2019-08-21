@@ -1,5 +1,6 @@
 package edu.pucmm.ia.grailspaypa.controllers
 
+
 import edu.pucmm.ia.grailspaypa.domains.auth.UsuarioRol
 import edu.pucmm.ia.grailspaypa.domains.auth.Usuario
 
@@ -36,7 +37,7 @@ class UsuarioRolController {
 
         try {
             usuarioRolService.save(usuarioRol)
-        } catch (ValidationException e) {
+        } catch (com.vaadin.data.ValidationException e) {
             respond usuarioRol.errors, view:'create'
             return
         }
@@ -62,7 +63,7 @@ class UsuarioRolController {
 
         try {
             usuarioRolService.save(usuarioRol)
-        } catch (ValidationException e) {
+        } catch (com.vaadin.data.ValidationException e) {
             respond usuarioRol.errors, view:'edit'
             return
         }
