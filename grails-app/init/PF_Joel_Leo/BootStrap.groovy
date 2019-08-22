@@ -1,6 +1,6 @@
 package PF_Joel_Leo
 
-import auth.Usuario
+import edu.pucmm.ia.grailspaypa.domains.auth.Usuario
 
 class BootStrap {
 
@@ -12,16 +12,16 @@ class BootStrap {
             def admin = new Usuario(username: "admin", password: "admin")
             admin.save(flush: true, failOnError: true)
         }
-        if (Categoria.count() < 1){
-
-            def categoria1 = new Categoria(nombre: "Normal", usuario: Usuario.first())
-            def categoria2 = new Categoria(nombre: "Importante", usuario: Usuario.first())
-            def categoria3 = new Categoria(nombre: "Bajo", usuario: Usuario.first())
-
-            categoria1.save(flush: true, failOnError: true)
-            categoria2.save(flush: true, failOnError: true)
-            categoria3.save(flush: true, failOnError: true)
-        }
+//        if (Categoria.count() < 1){
+//
+//            def categoria1 = new Categoria(nombre: "Normal", usuario: Usuario.first())
+//            def categoria2 = new Categoria(nombre: "Importante", usuario: Usuario.first())
+//            def categoria3 = new Categoria(nombre: "Bajo", usuario: Usuario.first())
+//
+//            categoria1.save(flush: true, failOnError: true)
+//            categoria2.save(flush: true, failOnError: true)
+//            categoria3.save(flush: true, failOnError: true)
+//        }
 
         /*if (Contacto.count() < 1){
 

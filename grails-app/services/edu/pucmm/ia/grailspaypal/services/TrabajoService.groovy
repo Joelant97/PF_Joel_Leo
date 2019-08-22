@@ -1,6 +1,7 @@
 package edu.pucmm.ia.grailspaypal.services
 
 import com.liferay.portal.kernel.transaction.Transactional
+import grails.transaction.Transactional
 
 @Transactional
 class TrabajoService {
