@@ -1,6 +1,8 @@
 package edu.pucmm.ia.grailspaypa.controllers
 
 import edu.pucmm.ia.grailspaypal.services.TrabajoService
+import grails.plugin.springsecurity.SpringSecurityService
+import grails.plugin.springsecurity.annotation.Secured
 
 @Secured('ROLE_USER')
 class TrabajoController {
@@ -28,16 +30,16 @@ class TrabajoController {
         respond trabajoService.get(id)
     }
 
-    def create(){
-        respond new Trabajo(params)
-    }
-
-    def save (Trabajo trabajo){
-        if (trabajo == null){
-            notFound()
-            return
-        }
-    }
+//    def create(){
+//        respond new Trabajo(params)
+//    }
+//
+//    def save (Trabajo trabajo){
+//        if (trabajo == null){
+//            notFound()
+//            return
+//        }
+//    }
 
 
 }

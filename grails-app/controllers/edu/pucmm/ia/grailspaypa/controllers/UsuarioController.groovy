@@ -1,6 +1,8 @@
 package edu.pucmm.ia.grailspaypa.controllers
 
-import auth.Usuario
+import edu.pucmm.ia.grailspaypa.domains.auth.Usuario
+
+import edu.pucmm.ia.grailspaypal.services.UsuarioService
 import grails.validation.ValidationException
 import static org.springframework.http.HttpStatus.*
 
@@ -34,7 +36,8 @@ class UsuarioController {
         respond usuarioService.get(id)
     }
 
-    def update(Contacto usuario) {
+//    def update(Contacto usuario) {
+    def update(Usuario usuario) {
         if (usuario == null) {
             notFound()
             return
@@ -49,7 +52,8 @@ class UsuarioController {
 
         request.withFormat {
             form multipartForm {
-                flash.message = message(code: 'default.updated.message', args: [message(code: 'contacto.label', default: 'Contacto'), usuario.id])
+//                flash.message = message(code: 'default.updated.message', args: [message(code: 'contacto.label', default: 'Contacto'), usuario.id])
+                flash.message = message(code: 'default.updated.message', args: [message(code: 'usuario.label', default: 'Contacto'), usuario.id])
                 redirect usuario
             }
             '*' { respond usuario, [status: OK] }

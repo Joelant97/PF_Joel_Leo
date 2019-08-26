@@ -1,6 +1,8 @@
 package edu.pucmm.ia.grailspaypa.controllers
 
-import auth.Rol
+import edu.pucmm.ia.grailspaypa.domains.auth.Rol
+
+import edu.pucmm.ia.grailspaypal.services.RolService
 import grails.validation.ValidationException
 import static org.springframework.http.HttpStatus.*
 

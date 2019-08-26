@@ -1,18 +1,19 @@
 package edu.pucmm.ia.grailspaypal.services
 
+import edu.pucmm.ia.grailspaypa.domains.auth.Usuario
 import grails.gorm.services.Service
 
-@Service(Contacto)
+@Service(Usuario)
 interface UsuarioService {
 
-    Contacto get(Serializable id)
+    Usuario get(Serializable id)
 
-    List<Contacto> list(Map args)
+    List<Usuario> list(Map args)
 
     Long count()
 
     void delete(Serializable id)
 
-    Contacto save(Contacto usuario)
+    Usuario save(Usuario usuario)
 
 }

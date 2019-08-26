@@ -1,6 +1,8 @@
 package edu.pucmm.ia.grailspaypal.services
 
-import auth.Rol
+import edu.pucmm.ia.grailspaypa.domains.auth.Rol
+
+//import auth.Rol
 import grails.gorm.services.Service
 
 @Service(Rol)
