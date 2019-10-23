@@ -1,4 +1,4 @@
-package PF_Joel_Leo
+package PF_Joel_Leo.main
 
 import edu.pucmm.ia.grailspaypal.domains.auth.Usuario
 

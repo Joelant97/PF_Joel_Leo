@@ -432,8 +432,8 @@
     this.options = options;
     this.selectpicker = {
       main: {
-        // store originalIndex (key) and newIndex (value) in this.selectpicker.main.map.newIndex for fast accessibility
-        // allows us to do this.main.elements[this.selectpicker.main.map.newIndex[index]] to select an element based on the originalIndex
+        // store originalIndex (key) and newIndex (value) in this.selectpicker.PF_Joel_Leo.map.newIndex for fast accessibility
+        // allows us to do this.PF_Joel_Leo.elements[this.selectpicker.PF_Joel_Leo.map.newIndex[index]] to select an element based on the originalIndex
         map: {
           newIndex: {},
           originalIndex: {}
