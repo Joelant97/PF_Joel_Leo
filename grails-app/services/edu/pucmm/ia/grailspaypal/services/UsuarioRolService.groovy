@@ -1,8 +1,8 @@
 package edu.pucmm.ia.grailspaypal.services
 
-import com.google.web.bindery.requestfactory.shared.Service
-import edu.pucmm.ia.grailspaypa.domains.auth.UsuarioRol
 
+import edu.pucmm.ia.grailspaypal.domains.auth.UsuarioRol
+import grails.gorm.services.Service
 
 @Service(UsuarioRol)
 interface UsuarioRolService {

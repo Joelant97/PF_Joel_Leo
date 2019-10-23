@@ -1,6 +1,7 @@
-package edu.pucmm.ia.grailspaypa.controllers
+package edu.pucmm.ia.grailspaypal.controllers
 
-import auth.Rol
+import edu.pucmm.ia.grailspaypal.domains.auth.Rol
+import edu.pucmm.ia.grailspaypal.services.RolService
 import grails.validation.ValidationException
 import static org.springframework.http.HttpStatus.*
 
@@ -57,6 +58,7 @@ class RolController {
 
         try {
             rolService.save(rol)
+
         } catch (ValidationException e) {
             respond rol.errors, view:'edit'
             return
@@ -64,7 +66,7 @@ class RolController {
 
         request.withFormat {
             form multipartForm {
-                flash.message = message(code: 'default.updated.message', args: [message(code: 'rol.label', default: 'Rol'), rol.id])
+                flash.message = message(code: 'default.updated.message', args: [message(default: 'Rol'), rol.id])
                 redirect rol
             }
             '*'{ respond rol, [status: OK] }
@@ -81,7 +83,7 @@ class RolController {
 
         request.withFormat {
             form multipartForm {
-                flash.message = message(code: 'default.deleted.message', args: [message(code: 'rol.label', default: 'Rol'), id])
+                flash.message = message(code: 'default.deleted.message', args: [message(default: 'Rol'), id])
                 redirect action:"index", method:"GET"
             }
             '*'{ render status: NO_CONTENT }

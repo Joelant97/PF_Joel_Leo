@@ -1,4 +1,4 @@
-package edu.pucmm.ia.grailspaypa.domains.auth
+package edu.pucmm.ia.grailspaypal.domains.auth
 
 import grails.gorm.DetachedCriteria
 import groovy.transform.ToString

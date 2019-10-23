@@ -1,6 +1,6 @@
 package PF_Joel_Leo
 
-import edu.pucmm.ia.grailspaypa.domains.auth.Usuario
+import edu.pucmm.ia.grailspaypal.domains.auth.Usuario
 
 class BootStrap {
 

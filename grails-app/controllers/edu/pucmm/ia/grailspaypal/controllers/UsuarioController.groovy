@@ -1,6 +1,7 @@
-package edu.pucmm.ia.grailspaypa.controllers
+package edu.pucmm.ia.grailspaypal.controllers
 
-import auth.Usuario
+//import auth.Usuario
+import edu.pucmm.ia.grailspaypal.services.UsuarioService
 import grails.validation.ValidationException
 import static org.springframework.http.HttpStatus.*
 
@@ -26,15 +27,13 @@ class UsuarioController {
 
     def save() {
 
-
-
     }
 
     def edit(Long id) {
         respond usuarioService.get(id)
     }
 
-    def update(Contacto usuario) {
+   /* def update(Contacto usuario) {
         if (usuario == null) {
             notFound()
             return
@@ -54,7 +53,7 @@ class UsuarioController {
             }
             '*' { respond usuario, [status: OK] }
         }
-    }
+    }*/
 
     def iniciarSesion(String username, String password) {
         def user = Usuario.findByUsername(username)

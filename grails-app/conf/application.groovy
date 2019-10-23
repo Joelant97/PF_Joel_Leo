@@ -8,11 +8,11 @@ grails.plugin.springsecurity.auth.ajaxLoginFormUrl = '/login'
 
 
 grails.plugin.springsecurity.controllerAnnotations.staticRules = [
-        [pattern: '/**', access: ['IS_AUTHENTICATED_REMEMBERED']],
-        [pattern: '/*', access: ['IS_AUTHENTICATED_REMEMBERED']],
-        [pattern: '/', access: ['IS_AUTHENTICATED_REMEMBERED']],
-        [pattern: '', access: ['IS_AUTHENTICATED_REMEMBERED']],
-        [pattern: '/dbconsole/**', access: ['IS_AUTHENTICATED_REMEMBERED']],
+        [pattern: '/**', access: ['permitAll']],
+        [pattern: '/*', access: ['permitAll']],
+        [pattern: '/', access: ['permitAll']],
+        [pattern: '', access: ['permitAll']],
+        [pattern: '/dbconsole/**', access: ['permitAll']],
         [pattern: '/login/*',        access: ['permitAll']],
         [pattern: '/login/**',       access: ['permitAll']],
         [pattern: '/logout/**',       access: ['permitAll']],

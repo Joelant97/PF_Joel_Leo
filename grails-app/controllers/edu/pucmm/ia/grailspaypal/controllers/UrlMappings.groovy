@@ -1,4 +1,4 @@
-package edu.pucmm.ia.grailspaypa.controllers
+package edu.pucmm.ia.grailspaypal.controllers
 
 class UrlMappings {
 

@@ -1,3 +1,5 @@
+package edu.pucmm.ia.grailspaypal.domains
+
 class Fotografo {
 
     // Modelo de los fotografos o camarografos, que seran asignados a los trabajos.

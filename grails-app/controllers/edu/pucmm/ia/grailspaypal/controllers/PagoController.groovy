@@ -1,7 +1,7 @@
-package edu.pucmm.ia.grailspaypa.controllers
+package edu.pucmm.ia.grailspaypal.controllers
 
-import edu.pucmm.ia.grailspaypa.domains.Compra
-import edu.pucmm.ia.grailspaypa.domains.Parametro
+import edu.pucmm.ia.grailspaypal.domains.Compra
+import edu.pucmm.ia.grailspaypal.domains.Parametro
 
 class PagoController {
 

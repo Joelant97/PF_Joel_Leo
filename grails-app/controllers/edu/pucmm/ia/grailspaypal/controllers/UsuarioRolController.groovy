@@ -1,18 +1,13 @@
-package edu.pucmm.ia.grailspaypa.controllers
-
-import edu.pucmm.ia.grailspaypa.domains.auth.UsuarioRol
-import edu.pucmm.ia.grailspaypa.domains.auth.Usuario
+package edu.pucmm.ia.grailspaypal.controllers
 
 
 import grails.plugin.springsecurity.annotation.Secured
-import grails.validation.ValidationException
-import static org.springframework.http.HttpStatus.*
 
 @Secured(['permitAll'])
 class UsuarioRolController {
 
     def usuarioRolService
-
+/*
     static allowedMethods = [save: "POST", update: "PUT", delete: "DELETE"]
 
     def index(Integer max) {
@@ -99,5 +94,5 @@ class UsuarioRolController {
 //    }
 
 
-
+*/
 }

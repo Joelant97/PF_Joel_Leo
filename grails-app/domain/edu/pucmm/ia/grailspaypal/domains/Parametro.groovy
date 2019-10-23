@@ -1,4 +1,4 @@
-package edu.pucmm.ia.grailspaypa.domains
+package edu.pucmm.ia.grailspaypal.domains
 
 class Parametro {
 

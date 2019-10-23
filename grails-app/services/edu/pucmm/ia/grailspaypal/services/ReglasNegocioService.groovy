@@ -1,6 +1,6 @@
 package edu.pucmm.ia.grailspaypal.services
 
-import edu.pucmm.ia.grailspaypa.domains.Parametro
+import edu.pucmm.ia.grailspaypal.domains.Parametro
 import grails.transaction.Transactional
 
 @Transactional

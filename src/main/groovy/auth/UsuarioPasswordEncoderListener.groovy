@@ -1,5 +1,6 @@
 package auth
 
+import edu.pucmm.ia.grailspaypal.domains.auth.Usuario
 import grails.plugin.springsecurity.SpringSecurityService
 import org.grails.datastore.mapping.engine.event.AbstractPersistenceEvent
 import org.grails.datastore.mapping.engine.event.PreInsertEvent

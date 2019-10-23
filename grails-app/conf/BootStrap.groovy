@@ -1,4 +1,4 @@
-import edu.pucmm.ia.grailspaypa.domains.Parametro
+import edu.pucmm.ia.grailspaypal.domains.Parametro
 
 class BootStrap {
 

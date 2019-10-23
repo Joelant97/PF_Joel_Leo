@@ -1,6 +1,10 @@
-package edu.pucmm.ia.grailspaypa.controllers
+package edu.pucmm.ia.grailspaypal.controllers
 
+import edu.pucmm.ia.grailspaypal.domains.Trabajo
 import edu.pucmm.ia.grailspaypal.services.TrabajoService
+import grails.plugin.springsecurity.SpringSecurityService
+import grails.plugin.springsecurity.annotation.Secured
+
 
 @Secured('ROLE_USER')
 class TrabajoController {
