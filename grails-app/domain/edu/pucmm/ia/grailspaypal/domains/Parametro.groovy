@@ -2,9 +2,9 @@ package edu.pucmm.ia.grailspaypal.domains
 
 class Parametro {
 
-    public static final int CUENTA_NEGOCIO_PAYPAL=1000;
+    public static final String CUENTA_NEGOCIO_PAYPAL="EAWQLQPSS9TCC";
 
-    int codigo;
+    String codigo;
     String nombre;
     String valor;
 

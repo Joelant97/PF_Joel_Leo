@@ -8,7 +8,25 @@
 <%@ page contentType="text/html;charset=UTF-8" %>
 <html>
 <head>
-    <title></title>
+    <title>Planes de boda</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>aranaz</title>
+    <link rel="icon" href="img/favicon.png">
+    <!-- Bootstrap CSS -->
+    <asset:stylesheet src="bootstrap.min.css"/>
+    <!-- animate CSS -->
+    <asset:stylesheet src="animate.css"/>
+    <asset:stylesheet src="owl.carousel.min.css"/>
+    <asset:stylesheet src="nice-select.css"/>
+    <asset:stylesheet src="all.css"/>
+    <asset:stylesheet src="flaticon.css"/>
+    <asset:stylesheet src="themify-icons.css"/>
+    <asset:stylesheet src="magnific-popup.css"/>
+    <asset:stylesheet src="slick.css"/>
+    <asset:stylesheet src="price_rangs.css"/>
+    <asset:stylesheet src="style.css"/>
 </head>
 <body>
 <section class="pricing py-5">
@@ -31,7 +49,8 @@
                             <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Free Subdomain</li>
                             <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Monthly Status Reports</li>
                         </ul>
-                        <a href="#" class="btn btn-block btn-primary text-uppercase">Button</a>
+                        <a href="<g:createLink controller="pago" action="checkout"
+                                               params="[nombre: 'Free']"/>" class="btn btn-block btn-primary text-uppercase">Button</a>
                     </div>
                 </div>
             </div>

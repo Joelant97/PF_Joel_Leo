@@ -6,14 +6,14 @@ import edu.pucmm.ia.grailspaypal.domains.Parametro
 class PagoController {
 
     def index() { }
-
     /**
      * Formulario de pago para las pruebas
      */
-    def formularioPago(){
-        String cuentaNegocio=Parametro.findByCodigo(Parametro.CUENTA_NEGOCIO_PAYPAL).valor;
+    def checkout(String nombre){
+        String cuentaNegocio = "EAWQLQPSS9TCC"
 
-        [cuentaNegocio: cuentaNegocio]
+        println(nombre)
+        [cuentaNegocio: cuentaNegocio, item_name: "Free", amount: 2444]
     }
 
     /**
